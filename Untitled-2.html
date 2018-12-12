@@ -1,0 +1,34 @@
+<html>
+    <style>
+.color {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    visibility: visible;
+}
+.color2 {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -100px;
+    left: 300px;
+}
+  </style>
+    
+<body> 
+    <div id="cuadrado1" class="color" onclick="ocultar()"></div>
+    <div id="cuadrado2" class="color2" onclick="visibilizar()"></div>
+    <script>
+        function ocultar (){
+            cuadrado=document.getElementById("cuadrado1")
+            cuadrado.style.visibility="hidden";
+        }
+        function visibilizar (){
+            cuadrado=document.getElementById("cuadrado1")
+            cuadrado.style.visibility="visible";
+        }
+
+    </script>   
+</body>
+</html>
